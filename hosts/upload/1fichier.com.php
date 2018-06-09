@@ -1,7 +1,7 @@
 <?php
 ######## Account Info ########
-$upload_acc['1fichier_com']['user'] = ''; //Set your login
-$upload_acc['1fichier_com']['pass'] = ''; //Set your password
+$upload_acc['1fichier_com']['user'] = '1fichier@emmm.anyalias.com'; //Set your login
+$upload_acc['1fichier_com']['pass'] = '1fichier'; //Set your password
 ########################
 
 $_GET['proxy'] = isset($_GET['proxy']) ? $_GET['proxy'] : '';
