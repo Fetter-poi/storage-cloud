@@ -1,8 +1,8 @@
 <?php
 
 //////////ACCOUNT INFO//////////////////////////////////////////////////////
-$upload_acc['openload_co']['user'] = ""; //Set your API Key Here
-$upload_acc['openload_co']['pass'] = ""; //Set your API Password Here
+$upload_acc['openload_co']['user'] = "62fa6d865b3e69f1"; //Set your API Key Here
+$upload_acc['openload_co']['pass'] = "O8QOlCRG"; //Set your API Password Here
 ////////////////////////////////////////////////////////////////////////////
 
 //Do Not Edit Below//
