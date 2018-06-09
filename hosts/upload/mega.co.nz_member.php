@@ -1,8 +1,8 @@
 <?php
 ######## Account Info ########
 /* Warning: Login uses a lot of CPU, make sure to upload at least 1 file in your account with this plugin for saving account data before adding it here.*/
-$upload_acc['mega_co_nz']['user'] = ''; //Set your email
-$upload_acc['mega_co_nz']['pass'] = ''; //Set your password
+$upload_acc['mega_co_nz']['user'] = 'bjkpledcf@lezi.tk'; //Set your email
+$upload_acc['mega_co_nz']['pass'] = 'bjkpledcf'; //Set your password
 ########################
 
 $chunk_UL = false; // Set to true to upload only 1 encrypted chunk per request to mega. (Switch to true when you are getting many Data sending errors)
