@@ -1,8 +1,8 @@
 <?php
 ######## Account Info ########
 /* Warning: Login uses a lot of CPU, make sure to upload at least 1 file in your account with this plugin for saving account data before adding it here.*/
-$upload_acc['mega_co_nz']['user'] = 'bjkpledcf@lezi.tk'; //Set your email
-$upload_acc['mega_co_nz']['pass'] = 'bjkpledcf'; //Set your password
+$upload_acc['mega.nz']['user'] = 'bjkpledcf@lezi.tk'; //Set your email
+$upload_acc['mega.nz']['pass'] = 'bjkpledcf'; //Set your password
 ########################
 
 $chunk_UL = false; // Set to true to upload only 1 encrypted chunk per request to mega. (Switch to true when you are getting many Data sending errors)
@@ -34,10 +34,10 @@ if (version_compare(PHP_VERSION, '5.4.0', '>=') && extension_loaded('openssl') &
 	}
 }
 
-if (!empty($upload_acc['mega_co_nz']['user']) && !empty($upload_acc['mega_co_nz']['pass'])) {
+if (!empty($upload_acc['mega.nz']['user']) && !empty($upload_acc['mega.nz']['pass'])) {
 	$default_acc = true;
-	$_REQUEST['T8']['up_login'] = $upload_acc['mega_co_nz']['user'];
-	$_REQUEST['T8']['up_pass'] = $upload_acc['mega_co_nz']['pass'];
+	$_REQUEST['T8']['up_login'] = $upload_acc['mega.nz']['user'];
+	$_REQUEST['T8']['up_pass'] = $upload_acc['mega.nz']['pass'];
 	$_REQUEST['action'] = 'Th3-822';
 	echo "<center><b>Using Default Login.</b></center><br />\n";
 } else $default_acc = false;
