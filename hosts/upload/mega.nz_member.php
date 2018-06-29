@@ -12,7 +12,7 @@ $_GET['proxy'] = isset($_GET['proxy']) ? $_GET['proxy'] : '';
 $not_done = true;
 $T8 = array('seqno' => mt_rand(), 'sid' => '');
 
-echo "<center>Mega.co.nz plugin by <b>Th3-822</b></center><br />\n"; // Please, do not remove or change this line contents. - Th3-822
+echo "<center>Mega.nz plugin by <b>Th3-822</b></center><br />\n"; // Please, do not remove or change this line contents. - Th3-822
 if (!extension_loaded('mcrypt') || !in_array('rijndael-128', mcrypt_list_algorithms(), true)) html_error("Mcrypt module isn't installed or it doesn't have support for the needed encryption.");
 
 // OpenSSL is Much Faster (Only Works Since 5.4)
@@ -55,7 +55,7 @@ if (empty($_REQUEST['action']) || $_REQUEST['action'] != 'Th3-822') {
 	echo "<script type='text/javascript'>self.resizeTo(700,350);</script>\n"; //Resize upload window
 } else {
 	$login = $not_done = false;
-	$domain = 'mega.co.nz';
+	$domain = 'mega.nz';
 
 	// Login
 	echo "<table style='width:600px;margin:auto;'>\n<tr><td align='center'>\n<div id='login' width='100%' align='center'>Login to $domain</div>\n";
@@ -174,7 +174,7 @@ function doApiReq($atrr) {
 
 	$sid = (!empty($T8['sid']) ? '&sid=' . $T8['sid'] : '');
 	$post = json_encode($atrr);
-	$referer = "https://mega.co.nz/\r\nContent-Type: application/json";
+	$referer = "https://mega.nz/\r\nContent-Type: application/json";
 	if ($cURL) $page = cURL("https://$domain/cs?id=" . ($T8['seqno']++) . $sid, 0, "[$post]", $referer);
 	else {
 		global $pauth;
